@@ -12,9 +12,7 @@ module.exports = {
             client.user.setActivity(text, {
                 type: 'PLAYING'
             });
-            console.error();
             Logger.info("[INFO] Activity is now set to : " + text + "!");
-
 
         } else if (type == "watching") {
             client.user.setActivity(text, {
@@ -30,7 +28,7 @@ module.exports = {
             Logger.info("[INFO] Activity is now set to : " + text + "!");
 
         } else {
-            console.error("[ERROR] Unknown welcome message type : " + type);
+            Logger.error("[ERROR] Unknown welcome message type : " + type);
         }
     }
 
