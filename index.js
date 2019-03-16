@@ -18,6 +18,7 @@ var stdio = require('stdio');
 const events = require("./core/events.js");
 const commandmanager = require("./core/commands.js");
 const reactionmanager = require("./core/reactionmsg.js");
+const utils = require("./core/utils.js");
 
 // Create the client
 let bot = new Bot(null);
@@ -39,7 +40,8 @@ bot.getClient().on('ready', () => {
     });
 
     if (config.presence.enabled) {
-        if (config.presence.type == "game") {
+        utils.setActivity(bot.getClient(), config.presence.type, config.presence.text, config.presence.url)
+        /*if (config.presence.type == "game") {
             bot.getClient().user.setActivity(config.presence.text, {
                 type: 'PLAYING'
             });
@@ -54,7 +56,7 @@ bot.getClient().on('ready', () => {
             });
         } else {
             console.error("[ERROR] Unknown welcome message type : " + config.welcome.type);
-        }
+        }*/
     }
 
     // Register plugins
