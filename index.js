@@ -1,12 +1,13 @@
 const Logger = require("./lib/logger");
 const Bot = require("./lib/bot");
 
-Logger.info("[INIT]  ____  _                       _    _                 ".replace('\\','\\\\'));
-Logger.info("[INIT] |  _ \(_)___  ___ ___  _ __ __| |  (_)___  ___  _ __  ".replace('\\','\\\\'));
-Logger.info("[INIT] | | | | / __|/ __/ _ \| '__/ _` |  | / __|/ _ \| '_ \ ".replace('\\','\\\\'));
-Logger.info("[INIT] | |_| | \__ \ (_| (_) | | | (_| |_ | \__ \ (_) | | | |".replace('\\','\\\\'));
-Logger.info("[INIT] |____/|_|___/\___\___/|_|  \__,_(_)/ |___/\___/|_| |_|".replace('\\','\\\\'));
-Logger.info("[INIT]                                  |__/                 ".replace('\\','\\\\'));
+Logger.info("[INIT]  ____  _                       _    _                 ");
+Logger.info("[INIT] |  _ \\(_)___  ___ ___  _ __ __| |  (_)___  ___  _ __  ");
+Logger.info("[INIT] | | | | / __|/ __/ _ \\| '__/ _` |  | / __|/ _ \\| '_ \\ ");
+Logger.info("[INIT] | |_| | \\__ \\ (_| (_) | | | (_| |_ | \\__ \\ (_) | | | |");
+Logger.info("[INIT] |____/|_|___/\\___\\___/|_|  \\__,_(_)/ |___/\\___/|_| |_|");
+Logger.info("[INIT]                                  |__/                 ");
+
 // Import Discord and File manager
 const Discord = require('discord.js');
 
