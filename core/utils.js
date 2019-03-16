@@ -30,6 +30,10 @@ module.exports = {
         } else {
             Logger.error("[ERROR] Unknown welcome message type : " + type);
         }
-    }
+    },
+
+    createInvite: (channel) => {
+        channel.createInvite().then(invite => { return invite });
+    } 
 
 }
