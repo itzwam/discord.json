@@ -1,11 +1,7 @@
 let Logger = require("../lib/logger");
 
-module.exports = {
-    ActivityTypeEnum : {
-        GAMING : "game",
-        STREAMING : "streaming",
-        WATCHING : "watching"
-    },
+
+utils = {
 
     setActivity: (client, type, text, url="") => {
         if (type == "game") {
@@ -32,10 +28,11 @@ module.exports = {
         }
     },
 
-    createInvite: (channel) => {
-        invite = null
-        channel.createInvite().then(_invite => { invite = _invite });
-        return invite;
+    createInvite: async (channel) => {
+        return channel.createInvite();
     } 
 
 }
+
+module.exports = utils 
+

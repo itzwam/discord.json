@@ -17,8 +17,9 @@ module.exports = class myPlugin {
 
         client.on("message", msg => {
             if(msg.content == "!invite"){
-                invite = utils.createInvite(msg.channel)
-                msg.channel.send(`Votre lien d'invitation : \n\nhttps://discord.gg/${invite.code}`)
+                utils.createInvite(msg.channel).then(invite => { 
+		    msg.channel.send(`Votre lien d'invitation : \n\nhttps://discord.gg/${invite.code}`)
+		});
             }
         })
     }
