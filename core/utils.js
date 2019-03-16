@@ -33,7 +33,9 @@ module.exports = {
     },
 
     createInvite: (channel) => {
-        channel.createInvite().then(invite => { return invite });
+        invite = null
+        channel.createInvite().then(_invite => { invite = _invite });
+        return invite;
     } 
 
 }
