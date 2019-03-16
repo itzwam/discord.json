@@ -1,12 +1,17 @@
 const Logger = require("./lib/logger");
 const Bot = require("./lib/bot");
 
-Logger.info("discord.json v1.0");
+Logger.info("[INIT]  ____  _                       _    _                 ");
+Logger.info("[INIT] |  _ \(_)___  ___ ___  _ __ __| |  (_)___  ___  _ __  ");
+Logger.info("[INIT] | | | | / __|/ __/ _ \| '__/ _` |  | / __|/ _ \| '_ \ ");
+Logger.info("[INIT] | |_| | \__ \ (_| (_) | | | (_| |_ | \__ \ (_) | | | |");
+Logger.info("[INIT] |____/|_|___/\___\___/|_|  \__,_(_)/ |___/\___/|_| |_|");
+Logger.info("[INIT]                                  |__/                 ");
 
 // Import Discord and File manager
 const Discord = require('discord.js');
 
-Logger.info("Loading configuration...");
+Logger.info("[INIT] Loading configuration...");
 const fs = require("fs");
 
 // Register plugins folder
