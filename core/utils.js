@@ -10,15 +10,21 @@ module.exports = {
             client.user.setActivity(text, {
                 type: 'PLAYING'
             });
+            console.error("[INFO] Activity is now set to : " + text);
+
         } else if (type == "watching") {
             client.user.setActivity(text, {
                 type: 'WATCHING'
             });
+            console.error("[INFO] Activity is now set to : " + text);
+
         } else if (type == "streaming") {
             client.user.setActivity(text, {
                 type: 'STREAMING',
                 url: url
             });
+            console.error("[INFO] Activity is now set to : " + text);
+
         } else {
             console.error("[ERROR] Unknown welcome message type : " + type);
         }

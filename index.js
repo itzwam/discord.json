@@ -40,7 +40,7 @@ bot.getClient().on('ready', () => {
     });
 
     if (config.presence.enabled) {
-        utils.setActivity(bot.getClient(), config.presence.type, config.presence.text, config.presence.url)
+        utils.setActivity(bot.getClient(), config.presence.type, config.presence.text, config.presence.streaming_url)
         /*if (config.presence.type == "game") {
             bot.getClient().user.setActivity(config.presence.text, {
                 type: 'PLAYING'
