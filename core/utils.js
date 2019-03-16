@@ -1,5 +1,5 @@
 module.exports = {
-    ActivityTypeEnum = {
+    ActivityTypeEnum : {
         GAMING : "game",
         STREAMING : "streaming",
         WATCHING : "watching"
